@@ -1,14 +1,12 @@
 {
-  "name": "ts-course",
+  "name": "typescript-exercises",
   "version": "1.0.0",
-  "description": "Hands-on TypeScript course for 2nd-year CS students",
+  "description": "Hands-on TypeScript course exercises",
   "scripts": {
     "build": "tsc",
-    "check": "tsc --noEmit",
-    "test": "vitest"
+    "check": "tsc --noEmit"
   },
   "devDependencies": {
-    "typescript": "^5.0.0",
-    "vitest": "^1.0.0"
+    "typescript": "^5.0.0"
   }
 }
