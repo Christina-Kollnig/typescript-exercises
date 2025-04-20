@@ -1,16 +1,20 @@
 /*
-Exercise 1: Getting Started with TypeScript
+Exercise 1: Writing a Simple Add Function in TypeScript
 
-Task:
-1. Set up a TypeScript project (init tsconfig, add a .ts file, compile it).
-2. Write a function that takes two numbers and returns their sum. Add type annotations.
-3. Use an AI tool to explore alternative ways to write this function. Try at least two different solutions and discuss their pros and cons.
+Instructions:
+1. Write a function that takes two numbers and returns their sum. Use TypeScript type annotations for the parameters and the return value.  
+2. Implement this function in three different ways:
+  - As a standard function declaration
+  - As a function expression
+  - As an arrow function
+
+Optional Exploration:
+- Try removing or changing the type annotations and see what errors or warnings TypeScript gives you.
+- Run `tsc` (the TypeScript compiler) with and without the `--strict` flag to see how type checking changes.
+- Bonus: Extend your function to handle string inputs as well, and discuss what changes are needed.
+
+AI Prompts:
+- What happens if I leave out the type annotations? How does TypeScript infer the types?
+- Which function style is most common in real-world TypeScript projects, and why?
+- How can I make my add function safer or more flexible?
 */
-
-function add(a: number, b: number): number {
-  return a + b;
-}
-
-// Try writing the function in other ways (e.g., arrow function, function expression, etc.)
-// Use AI to help you explore different approaches and discuss which you prefer and why.
-// Occasionally, try omitting or changing types to see what happens.

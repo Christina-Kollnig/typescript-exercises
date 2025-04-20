@@ -1,25 +1,19 @@
 /*
-Exercise 4: Enums & Utility Types
+Exercise 4: Working with Enums and Utility Types
 
-Task:
-1. Define an enum for a real-world scenario (e.g., user roles, order status).
-2. Use a utility type (e.g., Partial, Record) in a practical function.
-3. Use an AI tool to suggest alternative enum or utility type usages. Try different approaches and discuss their pros and cons.
+Instructions:
+1. Create an enum to represent the status of an order (for example: Pending, Shipped, Delivered).
+2. Write a function that takes a status value and returns a user-friendly string (e.g., "Your order has shipped!").
+3. Use a TypeScript utility type (like Partial, Record, or Pick) to create a mapping from each status to its message, and use this mapping inside your function.
+4. Make sure your code uses TypeScript’s enum syntax and type annotations.
+
+Optional Exploration:
+- Add more statuses to your enum (like Cancelled or Returned) and update your function to handle them.
+- Explore using string literal types as an alternative to enums. What are the differences?
+- See what happens if you pass an invalid value to your function—how does TypeScript help you catch mistakes?
+
+AI Prompts:
+- What are the benefits of using enums instead of plain objects or constants?
+- How do utility types like Record or Partial work with enums?
+- How does TypeScript help prevent errors when working with enums and utility types?
 */
-
-enum Status {
-  Pending,
-  Shipped,
-  Delivered,
-}
-
-function getStatusText(status: Status): string {
-  if (status === Status.Pending) return "Waiting";
-  if (status === Status.Shipped) return "On the way";
-  if (status === Status.Delivered) return "Arrived";
-  return "Unknown";
-}
-
-// Try using a utility type like Partial or Record in a function or object.
-// Use AI to help you explore different enum and utility type usages.
-// Occasionally, try omitting or changing types to see what happens.

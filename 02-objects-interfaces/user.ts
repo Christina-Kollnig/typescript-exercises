@@ -1,25 +1,20 @@
 /*
-Exercise 2: Objects & Interfaces
+Exercise 2: Working with Objects and Interfaces in TypeScript
 
-Task:
-1. Define an interface or type for a real-world object (e.g., User, Product).
-2. Create a function that takes this object and returns a formatted string.
-3. Use an AI tool to suggest alternative object structures or function signatures. Try different approaches and discuss their pros and cons.
+Instructions:
+1. Create an object that represents a user, with at least a `name` (string) and `age` (number).  
+2. Define a TypeScript interface for the user shape, and use it to type your object.  
+3. Write a function that takes a user object and returns a formatted string like:  
+  "Alice is 30 years old."
+
+Optional Exploration:
+- Add more properties to the user (e.g., email, isAdmin) and update the interface and function.
+- Try omitting the interface and see how TypeScript infers types.
+- Try defining the user shape using both `interface` and `type`—what differences do you notice?
+- Make some properties optional and handle them in your function.
+
+AI Prompts:
+- What happens if I add extra properties to the user object?
+- How does TypeScript help prevent mistakes when working with object shapes?
+- When should I use an interface vs. a type alias for objects?
 */
-
-interface User {
-  name: string;
-  age: number;
-}
-
-const user: User = {
-  name: "Alice",
-  age: 25,
-};
-
-function formatUser(u: User): string {
-  return `${u.name} is ${u.age} years old.`;
-}
-
-// Try changing the structure or types, or omitting types, and see what happens.
-// Use AI to help you explore different object shapes and function signatures.
