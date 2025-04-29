@@ -1,7 +1,3 @@
-# ts-course
-
-Welcome to the TypeScript course for 2nd-year CS students!
-
 ## How to use this repo
 
 - Each module is self-contained and includes exercises, tests, and a README.
