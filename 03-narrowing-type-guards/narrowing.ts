@@ -20,3 +20,21 @@ AI Prompts:
 - How do user-defined type guards work, and when should I use them?
 - How does TypeScript help prevent runtime errors when working with union types?
 */
+
+// Datei: 03-narrowing-type-guards/narrowing.ts
+
+// 1. Funktion, die einen string oder number verarbeitet
+export function processInput(input: string | number): void {
+  if (typeof input === 'string') {
+    // String-Zweig: Länge ausgeben
+    console.log(`String length: ${input.length}`);
+  } else {
+    // Number-Zweig: Quadrat berechnen
+    console.log(`Number squared: ${input * input}`);
+  }
+}
+
+// 2. Smoke-Tests
+console.log("=== Smoke Tests ===");
+processInput("Hello"); // erwartet: String length: 5
+processInput(7);       // erwartet: Number squared: 49
